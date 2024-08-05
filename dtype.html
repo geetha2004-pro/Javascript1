@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // primitive data type  
+                  //   string
+        var a="geetha"
+        console.log(a);
+        console.log(typeof(a));
+        // number
+        let b=12763827;
+        console.log(b);
+        console.log(typeof(b));
+        // boolean
+        var a=true;
+        console.log(a);
+        console.log(typeof(a));
+
+        var a=false;
+        console.log(a);
+        console.log(typeof(a));
+        // undefind
+
+        const c=undefined;
+        console.log(c);
+        console.log(typeof(c));
+        //  null
+        const e=null;
+        console.log(e);
+        console.log(typeof(e));
+        //       symbol
+        let f=Symbol('geetha');
+        console.log(f);
+        console.log(typeof(f));
+        // bigint it using only numbers
+        let number=BigInt(125453467526524536735426345);
+        console.log(number);
+
+
+        //         non-primitive data types
+        // 1.Array------>[]
+        var a=[1,2,3,4,"geetha"];
+        console.log(a);
+        console.log(a[1]);
+
+        // 2.Object-------->{}
+        //    syntax:
+        //   var_keyword obj-name={
+        //     key:value,
+        //     key:value,
+        //   }
+       let student={
+        name:"geetha",
+        branch:"mpcs",
+        college:"loyola",
+         number:62727868297
+       }
+       console.log(student);
+       console.log(student.name);
+       console.log(typeof student);
+
+    //    array of of object
+    // syntax:
+    // key_word object_name=[{
+    //     key:value,
+    //     key:value,
+    // }]
+    const car=[
+     car1=   {
+        name:"sgfd",
+        id:"ap83246",
+        price:846746,
+        compeny:"mahendra",
+        quality:{
+            name:"ufghdfg"
+        }
+
+        }
+    ]
+console.log(car);
+console.log(car1.name);
+console.log(car[0]);
+// its defines the array
+console.log(car1.price);
+console.log(car1.quality.name);
+// again inside the object
+
+    </script>
+</body>
+</html>

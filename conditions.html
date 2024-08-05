@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions</title>
+</head>
+<body>
+<script>
+// conditions
+// 1.simple if
+// 2.else
+// 3.else if
+
+
+// 1.simple if
+// if(condition){
+//     statement
+// }
+
+var a=10;
+var b=20;
+if(a>b){
+    console.log("it's true");
+ // condition is true at the time block scope is executed   
+//  once condition is false at the time not executed 
+}
+console.log("it's not true");
+//condition false and inside at time outside block is executed
+
+
+//2.else
+// if(condition){
+//     statement
+// }
+// else{
+//    statement
+// }
+// let age=prompt("enter the condidate name");
+
+// if(age>17){
+//     document.write("u r eligible for vote");
+// }
+// else{
+//     document.write("u r not eligible for vote");
+// }
+// example:
+//  let leapyear=prompt("enter the data")
+//  if(leapyear>366){
+//     document.write("please enter the leap year");
+//  }
+//  else{
+//     document.write("this is a leap year");
+//  }
+// example-2:
+// var leap=prompt("enter the data");
+// if((year%4==0)&&(year%100==0)||(year%400==0)){
+//     console.log("please enter the leap year");
+// }
+// else{
+//     console.log("this is leap year");
+// }
+
+
+
+// 3.else if
+// if(conditions){
+//   statements
+// }
+// else if(conditions){
+// statement
+// }
+// else{
+//     statement
+// }
+// var a=200;
+// var b=300;
+// if(a>b){
+//     console.log("it's false");
+// }
+// else if(a<b){
+//     console.log("it's true");
+// }
+// else{
+//     console.log("please enter the number");
+// }
+// var marks=prompt("enter the marks")
+// if(marks>80){
+//     console.log("a gread");
+// }
+// else if(marks>50){
+// console.log("b gread");
+// }
+// else{
+//     console.log("c gread");
+// }
+
+//------------------4. nasted if--------------
+// syntax:
+// if condition1 {
+//    // code to be executed if condition1 is true
+//   if condition2 {
+//      // code to be executed if both condition1 and condition2 are true
+//   }
+// }
+// let x=prompt("enter the number")
+// if(x<30){
+//     if(x<20){
+//         console.log(x);
+
+//     }
+//     else{
+//         console.log("false");
+//     }
+
+// }
+// ----------------5.switch-----------------
+// syntax:
+// switch(expression) {
+//   case n:
+//     code block
+//     break;
+//   case n:
+//     code block
+//     break;
+//   default:
+//     default code block
+//  }
+// var day=prompt("enter the day");
+// switch(day){
+//     case'1':
+//     document.write("sunday");
+//     break;
+//     case'2':
+//     document.write("monday");
+//     break;
+
+//     case'3':
+//     document.write("tuesday");
+//     break;
+
+//     case'4':
+//     document.write("wednesday");
+//     break;
+
+//     case'5':
+//     document.write("thurseday");
+//     break;
+//     case'6':
+//     document.write("friday");
+//     break;
+//     case'7':
+//     document.write("saturday");
+//     break;
+//     default:
+//         document.write("please enter the code");
+
+// }
+// example-1:
+var day=prompt("enter the day");
+switch(day){
+    case'1':
+    document.write("january");
+    break;
+    case'2':
+    document.write("february");
+    break;
+
+    case'3':
+    document.write("march");
+    break;
+
+    case'4':
+    document.write("aprile");
+    break;
+
+    case'5':
+    document.write("may");
+    break;
+    case'6':
+    document.write("jun");
+    break;
+    case'7':
+    document.write("july");
+    break;
+    case'8':
+    document.write("august");
+    break;
+    case'9':
+    document.write("september");
+    break;
+    case'10':
+    document.writ("october");
+    break;
+    case'11':
+    document.write("november");
+    break;
+    case'12':
+    document.write("december");
+    break;
+    default:
+        document.write("please enter the code");
+
+
+
+
+
+}
+
+
+</script>
+</body>
+</html>

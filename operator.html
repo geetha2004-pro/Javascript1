@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operatopr</title>
+</head>
+<body>
+    <script>
+// operators: Its symbol which used to perform some operations on operands
+    // types:
+    // // 1.arthimatic operators(+,-,*,/,%)
+    // 2.assignment operator(=,+=,-=,/=,%=)
+    // 3.unary operators(++,--)
+    // 4.comparision/relational operators(==,===,<,>,<=,>=,!=)
+    // 5.bitwise operators(&,|,!)
+    // 6.ternart/conditional operators(?,:)
+    // 7.logical operators(&&,||,!)
+
+// 1.arithematic operator
+var a=20;
+var b=30;
+var c=a-b;
+// console.log(c);
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a%b);
+// its defines the remainder
+
+// 2.assignment operators
+var a=2;
+var b=3;
+console.log(a+=b);
+// (2+=3):5
+console.log(a-=b);
+// (5-=3):2
+console.log(a*=b);
+// (2*=3):6
+console.log(a/=b);
+// (6/=3):2
+console.log(a%=b);
+// (2%=3):2
+
+
+// 3.unary operators
+// their are two types 
+// 1. increament operator(++) 
+// this is also two tyes
+// pre-increament:---->(++a)-->increamented first then display output
+// post-increament:---->(a++)-->display output first then increamented
+var a=20;
+console.log(++a);//21
+console.log(a);//21
+console.log(++a);//22
+console.log(a++);//22
+console.log(a);//23
+// pre-increament:---->(--a)-->decreamented first then display output
+// post-increament:---->(a--)-->display output first then decreamented
+console.log(--a);//19
+console.log(a);//19
+console.log(a--);//19
+console.log(a);//18
+
+//sum examples
+var a=3;
+var res=a++ + --a - a-- + ++a;
+// 3d but(3+1=4)+(4-1=3)3decreament -3d but(3-1=2)+(2+1=3)3increament=6(ans)
+console.log(res);
+var c=5;
+var res=c-- - --c + ++c - c++;
+//5d but(5-1=4)-(4-1=3)3decreament+(3+1=4)4increament-4d=2(ans)
+console.log(res);
+
+// 4.comparision/relational operator
+var a=20; f="20";
+var k="geetha"
+var b=30; s="30"
+var c=30;
+console.log(b==c);//true
+console.log(a==f);//true but it doesn't shown the data type onlt it shown number
+console.log(a==k);//false bcz of data type is different
+console.log(b===c);
+console.log(b===s);//false bcz of data type is different
+console.log(a<=c);
+console.log(a>=c);
+console.log(a!=c);
+
+// 5.turnary operator(?,:)
+
+// syntax:
+// (condition)?exp1:exp2;
+
+var a=30;
+var b=20;
+(a<b)?console.log("it's true"):console.log("it's false");
+(a>b)?console.log("it's true"):console.log("it's false");
+// inside the console content is not mandatary we con write any text to displayed the content
+// for example
+(a==b)?console.log("it's not false"):console.log("it's not true");
+(a>b)?console.log("it's not false"):console.log("it's not true");
+
+// 6.logical operator                                     a  &&  b           A  ||   B            A  !  B
+// their are three(&&,||,!)                               T  T    T          T   T    T           T     F
+// using logical(&&):                                     T  F    F          F   T    T           F     T
+// syntax:                                                F  T    F          T   F    T
+// if(condition){                                         F  F    F          F   F    F
+//     console.log(statement);
+// }
+
+var a=12;
+var b=13;
+if(a<b && b>a){
+    console.log("both are true");
+}
+//both are true so output is displayed
+if(a>b && b>a){
+    console.log("it second condition true");
+}
+// first(a<b) condition is false so output also not displayed
+if(a<b && b==a){
+    console.log("it first condition true");
+}
+//senotcond (b==a)condition is false so output also not displayed
+if(a==b && b===a){
+    console.log("it doth are false");
+}
+//both are false 
+
+//  using logical(||):                                    T   F   F          F   T    T           F     T
+// syntax:                                                F   T   F          T   F    T
+// if(condition){                                         F   F   F          F   F    F
+//     console.log(statement);
+// }
+
+var a=12;
+var b=13;
+if(a<b || b>a){
+    console.log("it true ");
+}
+//both are true so output is displayed
+if((a>b) || (b>a)){
+    console.log("it true ");
+}
+// first(a<b) condition is false so output also  displayed
+if(a<b || b==a){
+    console.log("it true ");
+}
+//senotcond (b==a)condition is false so output also  displayed
+if(a==b && b===a){
+
+    console.log("it true");
+}
+//both are false 
+                                 
+// syntax:                                               
+// if(condition){                                         
+//     console.log(statement);
+// }
+var a=4;
+var b=3;
+if(!(a>b)){
+    console.log("it's true");
+}
+//condition is true but using !(not) so it required false so output is not displayed
+if(!(a<b)){
+    console.log("it's true");
+}
+//condition is not true but !(not)is required so output is displayed
+
+// 7.bitwise operator(&,|,!)
+var d=3;
+var g=4;
+console.log(d&g);
+// 32 16 8 4 2 1
+//    0   0  1 1    
+//i want 3
+// als 4
+// 32  16  8  4  2  1
+     //    0  1  0   0
+    //  both are adding
+    // 0 0 1 1
+    // 0 1 0 0
+// ans:0 0 0 0 any one is false output also false
+var d=3;
+var g=4;
+console.log(d|g);
+// 32 16 8 4 2 1
+//    0   0  1 1    
+//i want 3
+// als 4
+// 32  16  8  4  2  1
+     //    0  1  0   0
+    //  both are adding
+    // 0 0 1 1
+    // 0 1 0 0
+//ans: 0 1 1 1 bcz of any one is true output also true
+var a=10;
+var b=2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
